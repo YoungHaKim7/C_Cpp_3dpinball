@@ -19,7 +19,9 @@ ldflags_fsanitize_address := "-O1 -g -fsanitize=address -fno-omit-frame-pointer 
 ldflags_fsanitize_object := "-g -fsanitize=address"
 ldflags_fsanitize_valgrind := "-fsanitize=address -g3 -std=c++2b"
 ldflags_common_raylib := "-O2 -MMD -MP -c -std=c++17 -I include"
-ldflags_common_raylib_obj :=  "-L lib/Linux -l raylib -l GL -l m -l pthread -l dl -l rt -l X11"
+ldflags_common_raylib_obj :=  "-L -l GL -l m -l pthread -l dl -l rt -l X11"
+ldflags_optimize :=  "-std=c++17 -Wall -O2 "
+sdl2ldlflag := "-lSDL2"
 
 # g++ compile
 r:
@@ -35,9 +37,8 @@ r:
 ro:
 	rm -rf target
 	mkdir -p target
-	g++ {{link_obj}} {{ldflags_common_raylib}} 
+	g++ {{link_obj}} {{ldflags_optimize}} {{sdl2ldlflag}}
 	mv *.o {{target_dir}}
-	mv *.d ./target/.
 	g++ {{target_dir}}/*.o {{ldflags_common_raylib_obj}}
 	mv a.out {{target_dir}}
 	{{target_dir}}/a.out
