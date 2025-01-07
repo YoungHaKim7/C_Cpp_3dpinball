@@ -35,3 +35,10 @@ ninja
 
 # windows.h 같은거
 - https://github.com/Leandros/WindowsHModular
+
+<hr />
+
+# cmake훈련하기 좋은 코드
+- https://github.com/RaldS7/btrfs-windows
+- 여기 보다가 찾음
+  - https://news.ycombinator.com/item?id=34781163
