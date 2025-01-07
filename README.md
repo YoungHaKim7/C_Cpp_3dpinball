@@ -26,6 +26,8 @@ sudo apt install cmake build-essential ninja-build libsdl2-dev libsdl2-mixer-dev
 sudo dnf install cmake ninja-build SDL2 SDL2-devel SDL2_mixer SDL2_mixer-devel fluidsynth fluidsynth-libs mscore-fonts g++
 
 # Build
+https://github.com/YoungHaKim7/C_Cpp_3dpinball
+cd C_Cpp_3dpinball
 mkdir -p build && cd build
 cmake -GNinja ..
 ninja
