@@ -42,3 +42,6 @@ ninja
 - https://github.com/RaldS7/btrfs-windows
 - 여기 보다가 찾음
   - https://news.ycombinator.com/item?id=34781163
+
+# 일반인 3D pinball 잘함
+- https://youtu.be/_5PNfUFFQlk?si=obK1uuCStu7CriiD
